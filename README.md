@@ -7,10 +7,13 @@ Solutions to LeetCode problems in C++, each with a write-up of the approach, tim
 <!-- PROBLEMS:START -->
 | Solved | Easy | Medium | Hard |
 |:------:|:----:|:------:|:----:|
-| **0** | 0 | 0 | 0 |
+| **1** | 1 | 0 | 0 |
+
+**Topics:** Array (1) · Hash Table (1)
 
 | # | Problem | Difficulty | Topics | Solution | Solved |
 |--:|---------|------------|--------|----------|--------|
+| 1 | [Two Sum](problems/0001-two-sum/two-sum.md) | Easy | Array, Hash Table | [C++](problems/0001-two-sum/two-sum.cpp) | 2026-10-20 |
 <!-- PROBLEMS:END -->
 
 ## How each problem is documented
