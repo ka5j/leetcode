@@ -12,11 +12,11 @@ How to add problems and keep this repo up to date.
    python3 scripts/new_problem.py 49 "Group Anagrams" Medium "Array, Hash Table, String"
    ```
 
-   This creates `problems/0049-group-anagrams/` with a `README.md` and an empty `solution.cpp`.
+   This creates `problems/0049-group-anagrams/` with a write-up and an empty C++ file, both named after the problem: `group-anagrams.md` and `group-anagrams.cpp`.
 
-2. **Paste your accepted C++ code** from LeetCode into `solution.cpp`.
+2. **Paste your accepted C++ code** from LeetCode into the problem's `.cpp` file.
 
-3. **Fill in the problem `README.md`**:
+3. **Fill in the problem's `.md` write-up**:
    - Paste the problem statement under **Problem**.
    - Explain the idea in your own words under **Approach**.
    - Fill in **Complexity** (time and space).
@@ -38,9 +38,9 @@ How to add problems and keep this repo up to date.
 
 ## Keeping things accurate
 
-- **The table is generated.** Never edit between the `PROBLEMS:START` and `PROBLEMS:END` markers in `README.md` by hand. Edit a problem's front matter (the block between the `---` lines at the top of its README) and rerun `update_readme.py`.
+- **The table is generated.** Never edit between the `PROBLEMS:START` and `PROBLEMS:END` markers in `README.md` by hand. Edit a problem's front matter (the block between the `---` lines at the top of its `.md` file) and rerun `update_readme.py`.
 - **Topic names should be consistent** (always `Hash Table`, not sometimes `Hashmap`), since the topic counts group by exact text. Use LeetCode's own tag names.
-- **Revisiting a problem?** Update its `solution.cpp` and notes, and commit with a message like `Improve 0049: sort-free O(n*k) solution`.
+- **Revisiting a problem?** Update its `.cpp` file and notes, and commit with a message like `Improve 0049: sort-free O(n*k) solution`.
 
 ## Pattern notes
 
@@ -57,5 +57,5 @@ Small, regular commits keep your GitHub contribution graph honest and make the h
 ## Weekly check (2 minutes)
 
 - Run `python3 scripts/update_readme.py` and confirm the counts look right.
-- Skim recent problem READMEs for empty **Approach** or **Complexity** sections.
+- Skim recent problem write-ups for empty **Approach** or **Complexity** sections.
 - Make sure everything is pushed (`git status` should be clean).

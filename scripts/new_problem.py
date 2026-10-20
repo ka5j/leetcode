@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create a problem folder with a README (from the template) and an empty solution.cpp.
+"""Create a problem folder with <slug>.md (from the template) and an empty <slug>.cpp.
 
 Usage: python3 scripts/new_problem.py 1 "Two Sum" Easy "Array, Hash Table"
 """
@@ -30,12 +30,13 @@ def main():
         "topics: Array, Hash Table": f"topics: {topics}",
         "date: YYYY-MM-DD": f"date: {date.today().isoformat()}",
         "problem-slug/)": f"{slug}/)",
+        "problem-slug.cpp": f"{slug}.cpp",
         "{number}": number,
         "{title}": title,
     }.items():
         readme = readme.replace(old, new)
-    (folder / "README.md").write_text(readme)
-    (folder / "solution.cpp").touch()
+    (folder / f"{slug}.md").write_text(readme)
+    (folder / f"{slug}.cpp").touch()
     print(f"Created {folder.relative_to(ROOT)}")
 
 

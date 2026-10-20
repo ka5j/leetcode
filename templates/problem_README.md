@@ -10,7 +10,7 @@ date: YYYY-MM-DD
 
 # {number}. {title}
 
-[LeetCode problem](https://leetcode.com/problems/problem-slug/) · [C++ solution](solution.cpp)
+[LeetCode problem](https://leetcode.com/problems/problem-slug/) · [C++ solution](problem-slug.cpp)
 
 ## Problem
 

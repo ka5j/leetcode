@@ -21,7 +21,7 @@ def parse(path):
 
 def main():
     problems = []
-    for readme in (ROOT / "problems").glob("*/README.md"):
+    for readme in (ROOT / "problems").glob("*/*.md"):
         meta = parse(readme)
         if meta:
             meta["folder"] = readme.parent.name
@@ -32,9 +32,9 @@ def main():
     topics = Counter(t.strip() for m in problems for t in m["topics"].split(","))
 
     rows = [
-        f"| {m['number']} | [{m['title']}](problems/{m['folder']}) "
+        f"| {m['number']} | [{m['title']}](problems/{m['folder']}/{m['slug']}.md) "
         f"| {m['difficulty']} | {m['topics']} "
-        f"| [C++](problems/{m['folder']}/solution.cpp) | {m['date']} |"
+        f"| [C++](problems/{m['folder']}/{m['slug']}.cpp) | {m['date']} |"
         for m in problems
     ]
     topic_line = " · ".join(f"{t} ({n})" for t, n in topics.most_common())

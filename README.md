@@ -17,8 +17,8 @@ Solutions to LeetCode problems in C++, each with a write-up of the approach, tim
 
 Every problem lives in its own folder, `problems/NNNN-title/`:
 
-- `README.md`: link to the problem, the statement, my approach, complexity analysis and notes
-- `solution.cpp`: the accepted C++ solution
+- `<slug>.md` (for example `two-sum.md`): link to the problem, the statement, my approach, complexity analysis and notes
+- `<slug>.cpp` (for example `two-sum.cpp`): the accepted C++ solution
 
 Topic-level summaries of recurring techniques (sliding window, two pointers, DP and so on) are in [`notes/`](notes).
 
