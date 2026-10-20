@@ -1,0 +1,61 @@
+# Day-to-day usage
+
+How to add problems and keep this repo up to date.
+
+## Adding a new problem
+
+1. **Scaffold the folder** from the repo root:
+
+   ```bash
+   python3 scripts/new_problem.py <number> "<Title>" <Easy|Medium|Hard> "<Topic 1, Topic 2>"
+   # example
+   python3 scripts/new_problem.py 49 "Group Anagrams" Medium "Array, Hash Table, String"
+   ```
+
+   This creates `problems/0049-group-anagrams/` with a `README.md` and an empty `solution.cpp`.
+
+2. **Paste your accepted C++ code** from LeetCode into `solution.cpp`.
+
+3. **Fill in the problem `README.md`**:
+   - Paste the problem statement under **Problem**.
+   - Explain the idea in your own words under **Approach**.
+   - Fill in **Complexity** (time and space).
+   - Add anything useful under **Notes**: mistakes, alternative solutions, related problems.
+
+4. **Rebuild the root README table**:
+
+   ```bash
+   python3 scripts/update_readme.py
+   ```
+
+5. **Commit and push**:
+
+   ```bash
+   git add .
+   git commit -m "Add 0049 Group Anagrams"
+   git push
+   ```
+
+## Keeping things accurate
+
+- **The table is generated.** Never edit between the `PROBLEMS:START` and `PROBLEMS:END` markers in `README.md` by hand. Edit a problem's front matter (the block between the `---` lines at the top of its README) and rerun `update_readme.py`.
+- **Topic names should be consistent** (always `Hash Table`, not sometimes `Hashmap`), since the topic counts group by exact text. Use LeetCode's own tag names.
+- **Revisiting a problem?** Update its `solution.cpp` and notes, and commit with a message like `Improve 0049: sort-free O(n*k) solution`.
+
+## Pattern notes
+
+When you notice a technique repeating (sliding window, two pointers, binary search on the answer, DP states), add or extend a file in `notes/`, for example `notes/sliding-window.md`. List the pattern, when to use it, a C++ skeleton, and links to the problems in this repo that use it.
+
+## Commit conventions
+
+- One commit per problem: `Add 0001 Two Sum`.
+- Improvements to an existing solution: `Improve 0001: ...`.
+- Pattern notes: `Notes: sliding window`.
+
+Small, regular commits keep your GitHub contribution graph honest and make the history easy to read.
+
+## Weekly check (2 minutes)
+
+- Run `python3 scripts/update_readme.py` and confirm the counts look right.
+- Skim recent problem READMEs for empty **Approach** or **Complexity** sections.
+- Make sure everything is pushed (`git status` should be clean).
