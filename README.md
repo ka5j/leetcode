@@ -7,14 +7,15 @@ Solutions to LeetCode problems in C++, each with a write-up of the approach, tim
 <!-- PROBLEMS:START -->
 | Solved | Easy | Medium | Hard |
 |:------:|:----:|:------:|:----:|
-| **2** | 1 | 1 | 0 |
+| **3** | 2 | 1 | 0 |
 
-**Topics:** Array (1) · Hash Table (1) · Linked List (1) · Math (1) · Recursion (1)
+**Topics:** Array (2) · Hash Table (2) · Linked List (1) · Math (1) · Recursion (1) · Sorting (1)
 
 | # | Problem | Difficulty | Topics | Solution | Solved |
 |--:|---------|------------|--------|----------|--------|
 | 1 | [Two Sum](problems/0001-two-sum/two-sum.md) | Easy | Array, Hash Table | [C++](problems/0001-two-sum/two-sum.cpp) | 2026-10-20 |
 | 2 | [Add Two Numbers](problems/0002-add-two-numbers/add-two-numbers.md) | Medium | Linked List, Math, Recursion | [C++](problems/0002-add-two-numbers/add-two-numbers.cpp) | 2026-10-20 |
+| 217 | [Contains Duplicate](problems/0217-contains-duplicate/contains-duplicate.md) | Easy | Array, Hash Table, Sorting | [C++](problems/0217-contains-duplicate/contains-duplicate.cpp) | 2026-10-22 |
 <!-- PROBLEMS:END -->
 
 ## How each problem is documented
