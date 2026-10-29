@@ -7,14 +7,15 @@ Solutions to LeetCode problems in C++, each with a write-up of the approach, tim
 <!-- PROBLEMS:START -->
 | Solved | Easy | Medium | Hard |
 |:------:|:----:|:------:|:----:|
-| **6** | 4 | 2 | 0 |
+| **7** | 4 | 3 | 0 |
 
-**Topics:** Hash Table (4) · Array (3) · String (3) · Sorting (3) · Linked List (1) · Math (1) · Recursion (1) · Two Pointers (1)
+**Topics:** Hash Table (5) · String (4) · Array (3) · Sorting (3) · Linked List (1) · Math (1) · Recursion (1) · Sliding Window (1) · Two Pointers (1)
 
 | # | Problem | Difficulty | Topics | Solution | Solved |
 |--:|---------|------------|--------|----------|--------|
 | 1 | [Two Sum](problems/0001-two-sum/two-sum.md) | Easy | Array, Hash Table | [C++](problems/0001-two-sum/two-sum.cpp) | 2026-10-20 |
 | 2 | [Add Two Numbers](problems/0002-add-two-numbers/add-two-numbers.md) | Medium | Linked List, Math, Recursion | [C++](problems/0002-add-two-numbers/add-two-numbers.cpp) | 2026-10-20 |
+| 3 | [Longest Substring Without Repeating Characters](problems/0003-longest-substring-without-repeating-characters/longest-substring-without-repeating-characters.md) | Medium | Hash Table, String, Sliding Window | [C++](problems/0003-longest-substring-without-repeating-characters/longest-substring-without-repeating-characters.cpp) | 2026-10-28 |
 | 49 | [Group Anagrams](problems/0049-group-anagrams/group-anagrams.md) | Medium | Array, Hash Table, String, Sorting | [C++](problems/0049-group-anagrams/group-anagrams.cpp) | 2026-10-28 |
 | 125 | [Valid Palindrome](problems/0125-valid-palindrome/valid-palindrome.md) | Easy | Two Pointers, String | [C++](problems/0125-valid-palindrome/valid-palindrome.cpp) | 2026-10-26 |
 | 217 | [Contains Duplicate](problems/0217-contains-duplicate/contains-duplicate.md) | Easy | Array, Hash Table, Sorting | [C++](problems/0217-contains-duplicate/contains-duplicate.cpp) | 2026-10-22 |

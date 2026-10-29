@@ -4,4 +4,5 @@ Problems I solved but struggled with, to re-solve from scratch later. Generated 
 
 | # | Problem | Difficulty | Topics | Solved | What tripped me up |
 |--:|---------|------------|--------|--------|--------------------|
+| 3 | [Longest Substring Without Repeating Characters](problems/0003-longest-substring-without-repeating-characters/longest-substring-without-repeating-characters.md) ([LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/)) | Medium | Hash Table, String, Sliding Window | 2026-10-28 | Sliding window logic - kept the window at a fixed size instead of letting it shrink and grow; out-of-bounds errors |
 | 49 | [Group Anagrams](problems/0049-group-anagrams/group-anagrams.md) ([LeetCode](https://leetcode.com/problems/group-anagrams/)) | Medium | Array, Hash Table, String, Sorting | 2026-10-28 | C++ syntax (sorting a string, iterating a map, nested vectors); took a brute-force detour first |
