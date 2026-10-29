@@ -4,8 +4,10 @@ title: Problem Title
 slug: problem-slug
 difficulty: Easy
 topics: Array, Hash Table
-status: Solved
+status: In Progress
 date: YYYY-MM-DD
+review: false
+review_reason:
 ---
 
 # {number}. {title}
