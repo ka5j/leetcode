@@ -77,6 +77,5 @@ Things that tripped me up:
 
 - **Returning the wrong pointer.** I advanced my result pointer as I built the list, so I returned the last node instead of the head. The fix is to keep a separate pointer to the head and return that.
 - **Leftover carry.** If both lists end while a carry is pending (for example `[5] + [5]`, which should give `[0,1]`), the loop must run once more to add the carry as a new node.
-- **Copy-paste typo.** In the branch where both lists still had nodes, I read both values from `l2` instead of one from each list. Reading the examples by hand caught it.
 
 Possible simplification: using a placeholder head node before the real list avoids special-casing the first node, and a single loop condition (`l1 || l2 || carry`) replaces the separate branches for each list ending.
