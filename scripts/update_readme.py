@@ -83,9 +83,11 @@ def write_review(flagged):
         ]
         for m in flagged:
             reason = m.get("review_reason", "").replace("|", "\\|")
+            link = m.get("link", f"https://leetcode.com/problems/{m['slug']}/")
+            site = "NeetCode" if "neetcode" in link else "LeetCode"
             lines.append(
                 f"| {m['number']} | [{m['title']}](problems/{m['folder']}/{m['slug']}.md) "
-                f"([LeetCode](https://leetcode.com/problems/{m['slug']}/)) "
+                f"([{site}]({link})) "
                 f"| {m['difficulty']} | {m['topics']} | {m['date']} "
                 f"| {reason} |"
             )

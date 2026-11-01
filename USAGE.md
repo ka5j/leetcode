@@ -54,6 +54,8 @@ review_reason: Returned the tail pointer and lost the final carry
 
 Set these two lines in the front matter of the problem's `.md` file, then run `python3 scripts/update_readme.py`. `REVIEW.md` lists every flagged problem with links to your write-up and to LeetCode.
 
+For a problem that's Premium on LeetCode, add a `link:` line with the NeetCode page, for example `link: https://neetcode.io/problems/string-encode-and-decode`. `REVIEW.md` then uses that link instead, and you should change the link at the top of the write-up by hand to match.
+
 When you can re-solve it from scratch without help, set `review: false`, clear `review_reason`, rerun the script and commit with a message like `Review 0002: re-solved`.
 
 ## Pattern notes
