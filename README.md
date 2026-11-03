@@ -7,9 +7,9 @@ Solutions to LeetCode problems in C++, each with a write-up of the approach, tim
 <!-- PROBLEMS:START -->
 | Solved | Easy | Medium | Hard |
 |:------:|:----:|:------:|:----:|
-| **9** | 4 | 5 | 0 |
+| **10** | 4 | 6 | 0 |
 
-**Topics:** Hash Table (6) · Array (5) · String (5) · Sorting (4) · Linked List (1) · Math (1) · Recursion (1) · Sliding Window (1) · Two Pointers (1) · Design (1) · Divide and Conquer (1) · Heap (Priority Queue) (1) · Bucket Sort (1) · Counting (1) · Quickselect (1)
+**Topics:** Array (6) · Hash Table (6) · String (5) · Sorting (4) · Linked List (1) · Math (1) · Recursion (1) · Sliding Window (1) · Two Pointers (1) · Prefix Sum (1) · Design (1) · Divide and Conquer (1) · Heap (Priority Queue) (1) · Bucket Sort (1) · Counting (1) · Quickselect (1)
 
 | # | Problem | Difficulty | Topics | Solution | Solved |
 |--:|---------|------------|--------|----------|--------|
@@ -19,6 +19,7 @@ Solutions to LeetCode problems in C++, each with a write-up of the approach, tim
 | 49 | [Group Anagrams](problems/0049-group-anagrams/group-anagrams.md) | Medium | Array, Hash Table, String, Sorting | [C++](problems/0049-group-anagrams/group-anagrams.cpp) | 2026-10-28 |
 | 125 | [Valid Palindrome](problems/0125-valid-palindrome/valid-palindrome.md) | Easy | Two Pointers, String | [C++](problems/0125-valid-palindrome/valid-palindrome.cpp) | 2026-10-26 |
 | 217 | [Contains Duplicate](problems/0217-contains-duplicate/contains-duplicate.md) | Easy | Array, Hash Table, Sorting | [C++](problems/0217-contains-duplicate/contains-duplicate.cpp) | 2026-10-22 |
+| 238 | [Product of Array Except Self](problems/0238-product-of-array-except-self/product-of-array-except-self.md) | Medium | Array, Prefix Sum | [C++](problems/0238-product-of-array-except-self/product-of-array-except-self.cpp) | 2026-11-02 |
 | 242 | [Valid Anagram](problems/0242-valid-anagram/valid-anagram.md) | Easy | Hash Table, String, Sorting | [C++](problems/0242-valid-anagram/valid-anagram.cpp) | 2026-10-22 |
 | 271 | [Encode and Decode Strings](problems/0271-encode-and-decode-strings/encode-and-decode-strings.md) | Medium | Array, String, Design | [C++](problems/0271-encode-and-decode-strings/encode-and-decode-strings.cpp) | 2026-11-01 |
 | 347 | [Top K Frequent Elements](problems/0347-top-k-frequent-elements/top-k-frequent-elements.md) | Medium | Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect | [C++](problems/0347-top-k-frequent-elements/top-k-frequent-elements.cpp) | 2026-10-29 |
