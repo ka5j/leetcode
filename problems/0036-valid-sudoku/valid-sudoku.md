@@ -6,6 +6,7 @@ difficulty: Medium
 topics: Array, Hash Table, Matrix
 status: Solved
 date: 2026-11-04
+solves: 1
 review: true
 review_reason: Works but uses 81 hardcoded branches; re-solve with a short, general version
 ---

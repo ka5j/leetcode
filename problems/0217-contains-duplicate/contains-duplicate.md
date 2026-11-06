@@ -6,6 +6,7 @@ difficulty: Easy
 topics: Array, Hash Table, Sorting
 status: Solved
 date: 2026-10-22
+solves: 1
 ---
 
 # 217. Contains Duplicate

@@ -6,6 +6,7 @@ difficulty: Medium
 topics: Array, Prefix Sum
 status: Solved
 date: 2026-11-02
+solves: 1
 review: true
 review_reason: New technique (prefix and suffix products); lining up the suffix array and handling the ends; O(1) space follow-up not solved yet
 ---

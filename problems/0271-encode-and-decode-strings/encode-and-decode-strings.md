@@ -6,6 +6,7 @@ difficulty: Medium
 topics: Array, String, Design
 status: Solved
 date: 2026-11-01
+solves: 1
 review: true
 review_reason: Designing the format (lengths need an end marker) and handling empty strings
 link: https://neetcode.io/problems/string-encode-and-decode

@@ -6,6 +6,7 @@ difficulty: Easy
 topics: Array, Hash Table
 status: In Progress
 date: YYYY-MM-DD
+solves: 0
 review: false
 review_reason:
 ---

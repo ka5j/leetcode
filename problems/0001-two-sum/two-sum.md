@@ -6,6 +6,7 @@ difficulty: Easy
 topics: Array, Hash Table
 status: Solved
 date: 2026-10-20
+solves: 1
 ---
 
 # 1. Two Sum

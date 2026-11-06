@@ -6,6 +6,7 @@ difficulty: Medium
 topics: Array, Hash Table, Divide and Conquer, Sorting, Heap (Priority Queue), Bucket Sort, Counting, Quickselect
 status: Solved
 date: 2026-10-29
+solves: 1
 review: true
 review_reason: First approach sorts by frequency (O(n log n)); re-solve to meet the better-than-O(n log n) follow-up
 ---

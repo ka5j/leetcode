@@ -6,6 +6,7 @@ difficulty: Medium
 topics: Array, Hash Table, String, Sorting
 status: Solved
 date: 2026-10-28
+solves: 1
 review: true
 review_reason: C++ syntax (sorting a string, iterating a map, nested vectors); took a brute-force detour first
 ---

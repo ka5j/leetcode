@@ -6,6 +6,7 @@ difficulty: Easy
 topics: Two Pointers, String
 status: Solved
 date: 2026-10-26
+solves: 1
 ---
 
 # 125. Valid Palindrome

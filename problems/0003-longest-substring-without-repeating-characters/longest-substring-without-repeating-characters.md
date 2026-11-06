@@ -6,6 +6,7 @@ difficulty: Medium
 topics: Hash Table, String, Sliding Window
 status: Solved
 date: 2026-10-28
+solves: 1
 review: true
 review_reason: Sliding window logic - kept the window at a fixed size instead of letting it shrink and grow; out-of-bounds errors
 ---

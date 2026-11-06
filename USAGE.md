@@ -21,13 +21,16 @@ How to add problems and keep this repo up to date.
    - Explain the idea in your own words under **Approach**.
    - Fill in **Complexity** (time and space).
    - Add anything useful under **Notes**: mistakes, alternative solutions, related problems.
-   - Change `status: In Progress` to `status: Solved` in the front matter. Only solved problems appear in the README table, so unfinished folders can sit in `problems/` safely.
 
-4. **Rebuild the root README table** (this also rebuilds `REVIEW.md`):
+4. **Mark it solved**. This sets `status: Solved`, today's date and `solves: 1`, then rebuilds the README table and `REVIEW.md`:
 
    ```bash
-   python3 scripts/update_readme.py
+   python3 scripts/solved.py 49
+   # struggled? flag it for review in the same step
+   python3 scripts/solved.py 49 --review "Missed the empty-string case"
    ```
+
+   Only solved problems appear in the README table, so unfinished folders can sit in `problems/` safely.
 
 5. **Commit and push**:
 
@@ -45,18 +48,26 @@ How to add problems and keep this repo up to date.
 
 ## Flagging problems to revisit
 
-If you solved a problem but struggled, flag it so it shows up in [`REVIEW.md`](REVIEW.md):
+If you solved a problem but struggled, flag it so it shows up in [`REVIEW.md`](REVIEW.md), either when you mark it solved or later:
 
-```yaml
-review: true
-review_reason: Returned the tail pointer and lost the final carry
+```bash
+python3 scripts/solved.py 2 --review "Returned the tail pointer and lost the final carry"
 ```
 
-Set these two lines in the front matter of the problem's `.md` file, then run `python3 scripts/update_readme.py`. `REVIEW.md` lists every flagged problem with links to your write-up and to LeetCode.
+This sets `review: true` and `review_reason` in the problem's front matter. `REVIEW.md` lists every flagged problem with links to your write-up and to LeetCode.
 
 For a problem that's Premium on LeetCode, add a `link:` line with the NeetCode page, for example `link: https://neetcode.io/problems/string-encode-and-decode`. `REVIEW.md` then uses that link instead, and you should change the link at the top of the write-up by hand to match.
 
-When you can re-solve it from scratch without help, set `review: false`, clear `review_reason`, rerun the script and commit with a message like `Review 0002: re-solved`.
+## Re-solving problems
+
+Each problem's front matter has a `solves:` counter, shown in the **Times solved** column of the README and `REVIEW.md`. Every time you re-solve a problem from scratch, record it:
+
+```bash
+python3 scripts/solved.py 2                  # adds 1 to solves and sets last_solved to today
+python3 scripts/solved.py 2 --clear-review   # same, and takes it off REVIEW.md once it feels solid
+```
+
+The original `date:` stays as the day you first solved it. Commit with a message like `Review 0002: re-solved`.
 
 ## Pattern notes
 

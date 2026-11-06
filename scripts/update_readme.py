@@ -38,7 +38,8 @@ def main():
     rows = [
         f"| {m['number']} | [{m['title']}](problems/{m['folder']}/{m['slug']}.md) "
         f"| {m['difficulty']} | {m['topics']} "
-        f"| [C++](problems/{m['folder']}/{m['slug']}.cpp) | {m['date']} |"
+        f"| [C++](problems/{m['folder']}/{m['slug']}.cpp) | {m['date']} "
+        f"| {m.get('solves', '1')} |"
         for m in problems
     ]
     topic_line = " · ".join(f"{t} ({n})" for t, n in topics.most_common())
@@ -52,8 +53,8 @@ def main():
     if topic_line:
         parts += [f"**Topics:** {topic_line}", ""]
     parts += [
-        "| # | Problem | Difficulty | Topics | Solution | Solved |",
-        "|--:|---------|------------|--------|----------|--------|",
+        "| # | Problem | Difficulty | Topics | Solution | Solved | Times solved |",
+        "|--:|---------|------------|--------|----------|--------|:------------:|",
         *rows,
     ]
 
@@ -78,8 +79,8 @@ def write_review(flagged):
         lines.append("Nothing flagged right now.")
     else:
         lines += [
-            "| # | Problem | Difficulty | Topics | Solved | What tripped me up |",
-            "|--:|---------|------------|--------|--------|--------------------|",
+            "| # | Problem | Difficulty | Topics | Solved | Times solved | What tripped me up |",
+            "|--:|---------|------------|--------|--------|:------------:|--------------------|",
         ]
         for m in flagged:
             reason = m.get("review_reason", "").replace("|", "\\|")
@@ -88,7 +89,7 @@ def write_review(flagged):
             lines.append(
                 f"| {m['number']} | [{m['title']}](problems/{m['folder']}/{m['slug']}.md) "
                 f"([{site}]({link})) "
-                f"| {m['difficulty']} | {m['topics']} | {m['date']} "
+                f"| {m['difficulty']} | {m['topics']} | {m['date']} | {m.get('solves', '1')} "
                 f"| {reason} |"
             )
     REVIEW.write_text("\n".join(lines) + "\n")

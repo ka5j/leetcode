@@ -6,6 +6,7 @@ difficulty: Medium
 topics: Linked List, Math, Recursion
 status: Solved
 date: 2026-10-20
+solves: 1
 ---
 
 # 2. Add Two Numbers

@@ -6,6 +6,7 @@ difficulty: Easy
 topics: Hash Table, String, Sorting
 status: Solved
 date: 2026-10-22
+solves: 1
 ---
 
 # 242. Valid Anagram
