@@ -7,9 +7,9 @@ Solutions to LeetCode problems in C++, each with a write-up of the approach, tim
 <!-- PROBLEMS:START -->
 | Solved | Easy | Medium | Hard |
 |:------:|:----:|:------:|:----:|
-| **11** | 4 | 7 | 0 |
+| **12** | 4 | 8 | 0 |
 
-**Topics:** Array (7) · Hash Table (7) · String (5) · Sorting (4) · Linked List (1) · Math (1) · Recursion (1) · Sliding Window (1) · Matrix (1) · Two Pointers (1) · Prefix Sum (1) · Design (1) · Divide and Conquer (1) · Heap (Priority Queue) (1) · Bucket Sort (1) · Counting (1) · Quickselect (1)
+**Topics:** Array (8) · Hash Table (8) · String (5) · Sorting (4) · Linked List (1) · Math (1) · Recursion (1) · Sliding Window (1) · Matrix (1) · Two Pointers (1) · Union Find (1) · Prefix Sum (1) · Design (1) · Divide and Conquer (1) · Heap (Priority Queue) (1) · Bucket Sort (1) · Counting (1) · Quickselect (1)
 
 | # | Problem | Difficulty | Topics | Solution | Solved | Times solved |
 |--:|---------|------------|--------|----------|--------|:------------:|
@@ -19,6 +19,7 @@ Solutions to LeetCode problems in C++, each with a write-up of the approach, tim
 | 36 | [Valid Sudoku](problems/0036-valid-sudoku/valid-sudoku.md) | Medium | Array, Hash Table, Matrix | [C++](problems/0036-valid-sudoku/valid-sudoku.cpp) | 2026-11-04 | 1 |
 | 49 | [Group Anagrams](problems/0049-group-anagrams/group-anagrams.md) | Medium | Array, Hash Table, String, Sorting | [C++](problems/0049-group-anagrams/group-anagrams.cpp) | 2026-10-28 | 1 |
 | 125 | [Valid Palindrome](problems/0125-valid-palindrome/valid-palindrome.md) | Easy | Two Pointers, String | [C++](problems/0125-valid-palindrome/valid-palindrome.cpp) | 2026-10-26 | 1 |
+| 128 | [Longest Consecutive Sequence](problems/0128-longest-consecutive-sequence/longest-consecutive-sequence.md) | Medium | Array, Hash Table, Union Find | [C++](problems/0128-longest-consecutive-sequence/longest-consecutive-sequence.cpp) | 2026-11-05 | 1 |
 | 217 | [Contains Duplicate](problems/0217-contains-duplicate/contains-duplicate.md) | Easy | Array, Hash Table, Sorting | [C++](problems/0217-contains-duplicate/contains-duplicate.cpp) | 2026-10-22 | 1 |
 | 238 | [Product of Array Except Self](problems/0238-product-of-array-except-self/product-of-array-except-self.md) | Medium | Array, Prefix Sum | [C++](problems/0238-product-of-array-except-self/product-of-array-except-self.cpp) | 2026-11-02 | 1 |
 | 242 | [Valid Anagram](problems/0242-valid-anagram/valid-anagram.md) | Easy | Hash Table, String, Sorting | [C++](problems/0242-valid-anagram/valid-anagram.cpp) | 2026-10-22 | 1 |
